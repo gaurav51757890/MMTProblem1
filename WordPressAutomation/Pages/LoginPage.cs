@@ -13,7 +13,7 @@ namespace WordPressAutomation
     {
         public static void GoTo()
         {
-            Driver.Instance.Navigate().GoToUrl("https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fwordpress.com%2F");
+            Driver.Instance.Navigate().GoToUrl(Driver.BaseAddress);
             var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(10));
             wait.Until(d => d.SwitchTo().ActiveElement().GetAttribute("id") == "usernameOrEmail");
         }

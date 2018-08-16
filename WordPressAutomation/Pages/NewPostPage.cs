@@ -13,8 +13,7 @@ namespace WordPressAutomation
     {
         public static void GoTo()
         {
-            Thread.Sleep(1000);
-            Driver.Instance.FindElement(By.XPath(".//*[@id='header']/div[1]/a/span")).Click();
+            LeftNavigation.Posts.AddNew.Select();
         }
 
         public static CreatePostCommand CreatePost(string title)
@@ -46,11 +45,11 @@ namespace WordPressAutomation
                 Driver.Instance.SwitchTo().ActiveElement().SendKeys(body);
                 Driver.Instance.SwitchTo().DefaultContent();
 
-                Thread.Sleep(1000);
+                Driver.Wait(TimeSpan.FromSeconds(1));
 
                 Driver.Instance.FindElement(By.ClassName("editor-publish-button")).Click();
 
-                Thread.Sleep(1000);
+                Driver.Wait(TimeSpan.FromSeconds(1));
 
                 Driver.Instance.FindElement(By.XPath(".//*[@class='button']")).Click();
             }

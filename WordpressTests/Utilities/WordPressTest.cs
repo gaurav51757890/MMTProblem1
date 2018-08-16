@@ -5,34 +5,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WordPressAutomation;
+using WordPressAutomation.Workflows;
 
 namespace WordpressTests
 {
-    [TestClass]
-    public class CreatePostTests
+    public class WordPressTest
     {
         [TestInitialize]
         public void Init()
         {
             Driver.Initialize();
-        }
+            PostCreator.Initialize();
 
-
-        [TestMethod]
-        public void CanCreateABasicPost()
-        {
             LoginPage.GoTo();
-            LoginPage.LoginAs("LOGIN").WithPassword("PASSWORD").Login();
-
-            NewPostPage.GoTo();
-            NewPostPage.CreatePost("This is the test post title").
-                WithBody("Hi, this is the body").
-                Publish();
+            LoginPage.LoginAs("andytestsite395540309").WithPassword("Password1!").Login();
         }
 
         [TestCleanup]
         public void Cleanup()
         {
+            PostCreator.Cleanup();
             Driver.Close();
         }
 
