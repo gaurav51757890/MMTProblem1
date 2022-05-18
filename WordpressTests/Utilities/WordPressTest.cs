@@ -18,7 +18,7 @@ namespace WordpressTests
             PostCreator.Initialize();
 
             LoginPage.GoTo();
-            LoginPage.LoginAs("andytestsite395540309").WithPassword("Password1!").Login();
+            LoginPage.LoginAs("govindarai1988").WithPassword("ggoovvii@123").Login();
         }
 
         [TestCleanup]

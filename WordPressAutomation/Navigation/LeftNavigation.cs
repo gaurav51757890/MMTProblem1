@@ -24,7 +24,7 @@ namespace WordPressAutomation
             {
                 public static void Select()
                 {
-                    Driver.Instance.FindElement(By.XPath("//span[.='My Site']")).Click();
+                    Driver.Instance.FindElement(By.XPath("//span[.='My Sites']")).Click();
                     Driver.Instance.FindElement(By.XPath("//span[.='Blog Posts']")).Click();
                 }
             }

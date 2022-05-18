@@ -8,3 +8,14 @@ C:\Users\tilst\Projects\WordPressAutomation\WordPressAutomation\obj\Debug\WordPr
 C:\Users\tilst\Projects\WordPressAutomation\WordPressAutomation\obj\Debug\WordPressAutomation.csproj.CoreCompileInputs.cache
 C:\Users\tilst\Projects\WordPressAutomation\WordPressAutomation\obj\Debug\WordPressAutomation.dll
 C:\Users\tilst\Projects\WordPressAutomation\WordPressAutomation\obj\Debug\WordPressAutomation.pdb
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\bin\Debug\WordPressAutomation.dll
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\bin\Debug\WordPressAutomation.pdb
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\bin\Debug\WebDriver.dll
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\bin\Debug\WebDriver.Support.dll
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\bin\Debug\WebDriver.xml
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\bin\Debug\WebDriver.Support.xml
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\obj\Debug\WordPressAutomation.csproj.AssemblyReference.cache
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\obj\Debug\WordPressAutomation.csproj.CoreCompileInputs.cache
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\obj\Debug\WordPressAutomation.csproj.CopyComplete
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\obj\Debug\WordPressAutomation.dll
+C:\Users\govindarai\Source\Repos\UI\WordPressAutomation\obj\Debug\WordPressAutomation.pdb
