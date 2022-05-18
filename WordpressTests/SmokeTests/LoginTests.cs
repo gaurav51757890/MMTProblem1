@@ -39,8 +39,10 @@ namespace WordpressTests
             Driver.Instance.FindElement(By.XPath("//span[text()='To']")).Click();
             Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             Driver.Instance.FindElement(By.XPath("//input[@placeholder='To']")).SendKeys("Bengaluru");
-           // Driver.Instance.FindElement(By.XPath("//span[text()='OneWay']")).Click();
-            
+            Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Driver.Instance.FindElement(By.XPath("//span[text()='From']")).Click();
+            Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+
             Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             Driver.Instance.FindElement(By.XPath("//a[text()='Search']")).Click();
             Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
