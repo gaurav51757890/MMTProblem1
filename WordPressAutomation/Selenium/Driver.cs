@@ -16,6 +16,7 @@ namespace WordPressAutomation
 
         public static void Initialize()
         {
+           
             Instance = new ChromeDriver();
             TurnOnWait();
         }

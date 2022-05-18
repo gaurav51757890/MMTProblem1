@@ -14,11 +14,11 @@ namespace WordpressTests
         [TestInitialize]
         public void Init()
         {
-            Driver.Initialize();
-            PostCreator.Initialize();
+            //Driver.Initialize();
+            //PostCreator.Initialize();
 
-            LoginPage.GoTo();
-            LoginPage.LoginAs("govindarai1988").WithPassword("ggoovvii@123").Login();
+            //LoginPage.GoTo();
+           //LoginPage.LoginAs("govindarai1988").WithPassword("ggoovvii@123").Login();
         }
 
         [TestCleanup]
