@@ -16,6 +16,8 @@ namespace WordPressAutomation
             Driver.Instance.Navigate().GoToUrl(Driver.BaseAddress);
             var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(10));
             wait.Until(d => d.SwitchTo().ActiveElement().GetAttribute("id") == "usernameOrEmail");
+
+
         }
 
         public static LoginCommand LoginAs(string userName)
