@@ -32,13 +32,15 @@ namespace WordpressTests
             Driver.Instance.FindElement(By.XPath("//span[text()='Flights']")).Click();
             Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             Driver.Instance.FindElement(By.XPath("//span[text()='From']")).Click();
-            Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             Driver.Instance.FindElement(By.XPath("//input[@placeholder='From']")).SendKeys("Delhi");
             Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
             Driver.Instance.FindElement(By.XPath("//span[text()='To']")).Click();
-            Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             Driver.Instance.FindElement(By.XPath("//input[@placeholder='To']")).SendKeys("Bengaluru");
+           // Driver.Instance.FindElement(By.XPath("//span[text()='OneWay']")).Click();
+            
             Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             Driver.Instance.FindElement(By.XPath("//a[text()='Search']")).Click();
             Driver.Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
@@ -109,18 +111,32 @@ namespace WordpressTests
 
 
             IList<IWebElement> NumberOfStops = Driver.Instance.FindElements(By.XPath("//p[contains(text(),'Stops')]/following-sibling::div//span[@class='filterName']"));
-            var StopList = new List<KeyValuePair<string, string>>();
+            var StopList = new List<KeyValuePair<string, int>>();
             for (int i = 0;i<NumberOfStops.Count;i++)
                 {
                 NumberOfStops[i].Click();
                 
-                StopList.Add(new KeyValuePair<string, int>(NumberOfStops[i].Text, Driver.Instance.FindElements(By.XPath("//p[@class='fliCode']")).));
+                StopList.Add(new KeyValuePair<string, int>(NumberOfStops[i].Text, Driver.Instance.FindElements(By.XPath("//p[@class='fliCode']")).Count));
 
             }
 
 
+            var AirlineNameAndPrice = new List<KeyValuePair<string, string>>();
 
-           
+            IList<IWebElement> Name = Driver.Instance.FindElements(By.XPath("//p[@class='fliCode']/preceding-sibling::p"));
+            IList<IWebElement> Price = Driver.Instance.FindElements(By.XPath("//div[@class='priceSection']//p"));
+
+
+            var NamePrice = new List<KeyValuePair<string, String>>();
+            for (int i = 0; i < Name.Count; i++)
+            {
+                
+
+                NamePrice.Add(new KeyValuePair<string, string>(Name[i].Text,Price[i].Text));
+
+            }
+
+
 
 
 

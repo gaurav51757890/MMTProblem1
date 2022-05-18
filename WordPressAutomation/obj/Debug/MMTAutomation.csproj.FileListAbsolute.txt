@@ -1,0 +1,11 @@
+D:\UIWorldcup\WordPressAutomation\bin\Debug\WordPressAutomation.dll
+D:\UIWorldcup\WordPressAutomation\bin\Debug\WordPressAutomation.pdb
+D:\UIWorldcup\WordPressAutomation\bin\Debug\WebDriver.dll
+D:\UIWorldcup\WordPressAutomation\bin\Debug\WebDriver.Support.dll
+D:\UIWorldcup\WordPressAutomation\bin\Debug\WebDriver.xml
+D:\UIWorldcup\WordPressAutomation\bin\Debug\WebDriver.Support.xml
+D:\UIWorldcup\WordPressAutomation\obj\Debug\MMTAutomation.csproj.AssemblyReference.cache
+D:\UIWorldcup\WordPressAutomation\obj\Debug\MMTAutomation.csproj.CoreCompileInputs.cache
+D:\UIWorldcup\WordPressAutomation\obj\Debug\MMTAutomation.csproj.CopyComplete
+D:\UIWorldcup\WordPressAutomation\obj\Debug\WordPressAutomation.dll
+D:\UIWorldcup\WordPressAutomation\obj\Debug\WordPressAutomation.pdb

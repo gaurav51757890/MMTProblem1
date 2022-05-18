@@ -61,9 +61,9 @@
     <Compile Include="Utilities\WordPressTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WordPressAutomation\WordPressAutomation.csproj">
+    <ProjectReference Include="..\WordPressAutomation\MMTAutomation.csproj">
       <Project>{39ea86df-9753-4c25-ba79-663b838aecef}</Project>
-      <Name>WordPressAutomation</Name>
+      <Name>MMTAutomation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

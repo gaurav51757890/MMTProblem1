@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPressAutomation", "WordPressAutomation\WordPressAutomation.csproj", "{39EA86DF-9753-4C25-BA79-663B838AECEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMTAutomation", "WordPressAutomation\MMTAutomation.csproj", "{39EA86DF-9753-4C25-BA79-663B838AECEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordpressTests", "WordpressTests\WordpressTests.csproj", "{52973EDC-708C-4F4E-AFAA-98000E93764E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMTTests", "WordpressTests\MMTTests.csproj", "{52973EDC-708C-4F4E-AFAA-98000E93764E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
